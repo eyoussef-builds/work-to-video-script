@@ -1,0 +1,11 @@
+# Mandatory final script review
+
+Review the actual script, image index, safe images, evidence ledger and demo plan together before calling the pack ready for review. File existence and a filled scene table do not prove a truthful or watchable story.
+
+- Read the narration aloud or pace it as spoken language. Check the opening, problem, decisions, implementation, verification and result form a clear story for the intended viewer. Remove unexplained jargon, repetitive scenes and claims the pictures cannot support. Keep the chosen narrator identity and distinguish paraphrases from actual quotations.
+- Trace every material spoken/on-screen claim to the ledger's relevant version and verification level. Preserve the difference between implemented, synthetically tested, provider-tested and live. Reconcile contradictory evidence and avoid crediting new work for a pre-existing app or asset.
+- Open every linked safe screenshot, including crops/redactions. Check that it is the real view claimed, readable, matched to its shot/scene, dated appropriately and free of private details in pixels, URLs and metadata. Historical and current captures remain distinguishable; missing footage must remain marked for capture. A generated interface is never proof of real behavior.
+- Walk through the demo recipe on paper from its starting state: prerequisites, exact inputs/actions, visible checkpoints, realistic waits, test data, failure route and cleanup must be usable by the eventual recorder. This review does not execute writes, paid calls, messages or recordings. Keep ungranted actions pending.
+- Open final local links and ensure the script and screenshot index are easy to review without exposing the private claim ledger in spoken text or public assets. Include only the user's actual CTA or pledge, and state meaningful capture/access gaps without implying the whole pack is complete.
+
+Fix findings and recheck affected scenes, claims and images. Retain concise review evidence in the private project output, then summarize what was checked and any remaining gaps. Deliver the supported review pack and stop before voice generation, animation, video recording/rendering or publication; a completed script review does not authorize production.

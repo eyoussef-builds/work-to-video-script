@@ -50,6 +50,10 @@ Planning a demo does not authorize running it. Identify steps needing production
 
 Do not invent a contest, share target, giveaway, launch date or GitHub release pledge. Include a supplied pledge only within the user's stated scope; it does not authorize monitoring or automatic publication when the target is reached. Preserve private repository status unless publication of that repository is separately authorized.
 
+## Mandatory final review
+
+Before delivery, read and perform [the final script review](references/final-review.md) on the narration, storyboard, actual safe screenshots, claim ledger and demo plan together. Check truth, story clarity, spoken pacing, shot/claim alignment and privacy. Fix findings and recheck affected outputs; retain concise private evidence and explicit capture gaps. A complete scene table alone is insufficient. This review does not authorize running the demo or producing a video.
+
 ## Deliver and stop
 
 Deliver a reviewable script/storyboard, the safe real screenshot pack, a private claim/source ledger and the demo plan. State the remaining capture/access gaps and what is verified. If the host supports files, save these in the project's permitted private output area, outside committed/public release files; link the script and screenshot index in the response. Keep revision state so another approval does not generate a duplicate pack.

@@ -1,121 +1,191 @@
-<p align="center"><img src="docs/images/hero.svg" alt="Work to Video Script: completed work, real evidence, a narrated script and demo plan" width="100%"></p>
+<p align="center"><img src="docs/images/banner-en.svg" alt="Work to Video Script — tell the story of what you built" width="100%"></p>
 
-# Work to Video Script
+<p align="center"><a href="README.ar.md"><b>اقرأ الدليل بالعربية</b></a> · <a href="#install">Install</a> · <a href="#first-use">Try it</a> · <a href="#questions">Questions</a> · <a href="#share">Share</a></p>
 
-**You finished the project. Now tell the story—with proof.**
+<p align="center"><a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-15130F"></a> <a href="docs/installation.md"><img alt="Installation guides for 15 agents" src="https://img.shields.io/badge/agent%20guides-15-FFE04A"></a> <img alt="English and Arabic guides" src="https://img.shields.io/badge/English%20%2B%20Arabic-guides-15130F"></p>
 
-[العربية](README.ar.md) · [Install](docs/installation.md) · [Privacy](docs/privacy.md) · [Example](docs/example.md) · [Share pack](docs/sharing.md)
+## 👋 What is Work to Video Script?
 
-You built something with an AI assistant. The useful story is scattered across decisions, commits, test results and screenshots. This skill brings those pieces together into a narrated video script, a real screenshot pack and a practical demo recording plan.
+You and your AI assistant just finished building something. Now you want a video showing how it started, the choices you made and how the result works. The story is there—but scattered across the conversation, code changes, tests and screenshots.
 
-Say **“All good—write the story.”** after approving the completed work. Review the script before choosing whether to make a video.
+**Work to Video Script gives your assistant a way to turn that completed work into a narrated script, real screenshots and a demo you can plan to record.**
 
-## From finished work to a reviewable story
+1. **Review what happened:** recover the problem, decisions, changes and verified result.
+2. **Gather real screenshots:** use actual project captures and identify what still needs filming.
+3. **Write the story:** prepare narration and scenes, matching important claims to their sources.
+4. **Plan the demo:** specify actions, inputs and visible results. You review before making a video.
 
-1. **Review the work.** The agent checks the active task, requirements, relevant changes and actual verification records.
-2. **Collect the evidence.** It inspects existing screenshots and can take authorized read-only captures of the actual application. Missing footage stays visibly missing.
-3. **Write and plan.** It drafts the narration and scenes, links important claims to evidence, and specifies the later demo actions.
-4. **You review.** Voice generation, avatar animation, video recording/rendering and publishing require a separate instruction.
+<p align="center"><img src="docs/images/how-it-works-en.svg" alt="Approve completed work, review the evidence, get a script and demo plan, then review" width="100%"></p>
 
-![English skill explainer](docs/images/infographic-en.png)
+A **skill** is a folder of instructions your AI assistant can follow. This one is not a video editor or automatic screen recorder. It helps your assistant prepare the story using the files, history and screenshot tools available to it.
 
-## What you receive
+### What can it help you explain?
 
-| Output | Why it helps |
+| You want to show… | The assistant prepares… |
 | --- | --- |
-| Narrated script + storyboard | Exact spoken copy, approximate scene timings and on-screen actions |
-| Real screenshot pack + index | Inspectable images linked to the scenes, with capture provenance |
-| Private evidence ledger | A source for each important claim, including verification limits |
-| Demo plan | Starting state, exact inputs, visible results, waits, side effects and cleanup |
-| Capture gaps | An honest list of footage/access still needed |
+| 💡 How the project started | A clear opening and the actual problem you wanted to solve |
+| 🛠️ How you built it | Decisions and useful turning points, with honest attribution |
+| 📸 What really happened | Actual screenshots, their capture context and links to the relevant scenes |
+| 🎙️ Your assistant telling the story | First-person narration in your chosen language and approved avatar's voice |
+| 🧪 How the result works | A demo plan with exact inputs, observable checkpoints and cleanup |
+| ✅ What is ready for review | The script, screenshot index, private source record and any capture gaps |
 
-Useful for builders, developers and creators explaining a completed project. An approved avatar can narrate; the skill does not include an avatar model or voice.
+Useful for developers, makers and creators sharing a build story, feature walkthrough or project recap. You choose the audience, language, narrator and approximate length. Avatar artwork and generated voice are not included.
 
-## Install and try it
+<a id="install"></a>
 
-### Ask your agent
+## 📥 Install it — step by step
 
-```text
-Install the work-to-video-script skill from
-https://github.com/eyoussef-builds/work-to-video-script/tree/main/skills/work-to-video-script
-for this agent. Preserve the supporting references and existing local customizations.
-```
+**You need:** an assistant that can read the relevant completed work. New screenshots require an available browser/app capture tool and access to the project. The skill does not supply tools, credentials or access to another agent's history.
 
-This route requires an agent that can download and install local files. Review any host permission request.
+### Easiest: ask your assistant to install it
 
-### Copy the folder yourself
+1. Open a session that can download and save files.
+2. Copy and send:
 
-Download the [source ZIP](https://github.com/eyoussef-builds/work-to-video-script/archive/refs/heads/main.zip), unzip it, and copy **the whole `skills/work-to-video-script` folder** into your agent's skills directory. For current Codex, the shared user location is `~/.agents/skills/`; Claude Code uses `~/.claude/skills/`. See the [15-agent installation guide](docs/installation.md) for paths, Windows steps, discovery and instruction-import alternatives.
+   ```text
+   Install work-to-video-script from https://github.com/eyoussef-builds/work-to-video-script.
+   Read the installation guide and inspect the skill first. Install the complete
+   skills/work-to-video-script folder in this agent's supported personal skill directory.
+   Preserve any customized copy. Tell me what project-history and screenshot tools you have.
+   ```
 
-Then try:
+3. Review any download/file permission request.
+4. Check it appeared: “Can you see work-to-video-script? Read it and identify its two references.”
+
+### Prefer copying it yourself?
+
+1. [Download ZIP](https://github.com/eyoussef-builds/work-to-video-script/archive/refs/heads/main.zip).
+2. Unzip it: double-click on Mac; on Windows right-click → **Extract All…**.
+3. Open **skills** and find the complete **work-to-video-script** folder.
+4. Copy it to the location in [your agent's guide](docs/installation.md).
+5. Reload/reopen skill discovery if needed, then request it by name.
+
+The guide covers **15 agents**, with documented native locations or clearly labeled instruction-reading alternatives, plus macOS/Linux and Windows steps. Documentation checks are not end-to-end tests in every agent. Cloud agents need their own accessible copy of the skill and project evidence.
+
+<a id="first-use"></a>
+
+## 🚀 Your first build story
+
+### 1. Finish the work, then ask for its story
+
+After approving the project in Codex, try:
 
 ```text
 All good. Use $work-to-video-script for the project we just completed.
-Write a first-person script with real screenshots and a demo plan.
-Use my approved avatar and language. Do not create the video.
+Write a 3-minute first-person script in my assistant's voice, with real screenshots
+and a demo plan. Use the active task and project files. Do not create the video.
 ```
 
-**Discovery check:** ask the agent to locate `work-to-video-script`, read its `SKILL.md` and name its two supporting references. A file copied to your laptop does not automatically become available in a cloud agent.
+In Claude Code use `/work-to-video-script`; other agents have their own invocation controls. “All good” can prompt contextual skill selection; it is not a global keyword listener. Approval of an intermediate choice or an existing script does not start another story.
 
-## Your first story
+### 2. Choose who tells it and who watches
 
-1. Finish the underlying project and approve its result.
-2. Keep the relevant workspace, conversation and existing verification records available to the agent.
-3. Ask for the story. It scans the active project, rather than unrelated repos or inboxes.
-4. Inspect the script and linked screenshots. Anything requiring a real message, production write or paid call remains in the later demo plan unless separately authorized.
-5. Revise the script. Decide on video production separately.
+Tell the assistant your audience, language, narrator and approximate duration. If you already chose these in the task, it should reuse them. For example: “Egyptian Arabic, English product names, my approved avatar, for people who have not seen the project.” Private installed preferences can save these choices without publishing personal configuration.
 
-The [fictional example](docs/example.md) shows how a “tests passed” claim differs from a real deployment and how a missing screenshot is reported.
+### 3. Let it review the actual work
 
-## What “all good” means
+It follows the active project's decisions, changes and verification records. Existing screenshots can show earlier milestones; a new read-only capture shows the current result. If a view needs a live message or production change, it goes into the later demo plan. Missing footage is identified rather than replaced by an invented screenshot.
 
-The trigger is contextual: approval of completed project work. It is not a global listener, scheduled scan or screen recorder. A casual acknowledgment, an intermediate choice, or approval of the resulting script does not recursively create another story. If automatic selection is unavailable, invoke the skill explicitly.
+### 4. Review the script and the scenes
 
-## Privacy and access
+You receive spoken narration, approximate timings, on-screen actions and links to real safe screenshots. The private source record separates what was implemented, tested, deployed and actually tried by a user.
 
-The skill contains instructions and templates, with no bundled executable collector, account connection or required API key. Your host agent/model still processes the material you give it, and any connected capture services retain their own permissions and policies. Agent usage may cost money under your plan/provider.
+**An invented example:** you finished a fictional task-list feature. You have a local test log and one current screenshot, but no deployment proof or historical recording.
 
-Raw screenshots, source mappings and the evidence ledger stay in private project outputs. Only separately reviewed crops/redactions belong in a shareable pack. Installing the skill does not grant access to other agents' histories, your whole computer, private accounts or external recipients. [Read the privacy guide](docs/privacy.md).
+| Scene | Sample narration | What the viewer would see |
+| --- | --- | --- |
+| Problem | “Finding the next task meant opening three lists.” | A paraphrase of the supplied problem, not an invented quote |
+| Result | “We put the next action in one place.” | Your actual current screenshot, labeled as current |
+| Check | “The local checks passed.” | The relevant test result; no claim that it was deployed |
+| Demo | “Add a task, mark it complete, then reload.” | A planned recording with visible checkpoints |
 
-<details>
-<summary>Can it recreate screen recordings from before it was installed?</summary>
+No screenshot from that fictional project is shipped here. During actual use, image links must point to genuine project captures. [See the complete example and demo plan](docs/example.md).
 
-It can recover the story from available records and historical screenshots. It cannot invent a recording of clicks that were never captured. Current captures and later demos are labeled as such.
+### 5. Decide what happens next
+
+Edit the story and approve the script. The skill stops there. Generating a voice, animating an avatar, recording/rendering a video or publishing it is a separate request. The demo plan records later test actions and access needed; it does not execute them just to obtain footage.
+
+## 🔒 Privacy in one minute
+
+- Only the active task's relevant evidence is reviewed; unrelated repos and inboxes stay outside the scan.
+- Raw screenshots, private source references and personal preferences stay in private project outputs. Shareable crops/redactions are reviewed separately.
+- Your assistant/model and any connected screenshot service process inputs under their own settings. This package contains no executable collector or account credentials.
+
+Read the [privacy guide](docs/privacy.md) for image handling, private outputs and access boundaries.
+
+<a id="questions"></a>
+
+## ❓ Questions & answers
+
+<details><summary><b>Is it free?</b></summary>
+
+The skill is free and open source under MIT, including commercial use with the license notice retained. Your assistant, model and connected services keep their own costs. The skill itself needs no separate API key.
+
 </details>
 
-<details>
-<summary>Does it make or publish the video?</summary>
+<details><summary><b>Will it record everything while I work?</b></summary>
 
-No. It stops at the script, screenshots and demo plan. A script approval alone does not authorize voice generation, animation, recording, rendering, publishing or live demo messages.
+No background recording is installed. After approval, it reconstructs the story from available records. If you explicitly use the skill during the build, it can preserve useful milestone evidence in the allowed private output area. It cannot recover a screen recording that was never made.
+
 </details>
 
-<details>
-<summary>Will it work in every agent?</summary>
+<details><summary><b>What if it cannot access my screenshots or history?</b></summary>
 
-The portable instructions can be loaded in skills-capable agents or supplied as explicit instructions. Actual access to task history, files, browser screenshots and private output folders depends on the host. Installation documentation is not a claim of end-to-end testing in every listed product.
+It uses evidence available to that host and states the gaps. A browser screenshot tool can capture an authorized current view; it cannot prove earlier clicks. Without captures, the screenshot pack remains partial and missing shots are listed.
+
 </details>
 
-<details>
-<summary>Can I choose my own narrator and language?</summary>
+<details><summary><b>Can I choose my own avatar and language?</b></summary>
 
-Yes. Provide them in the request or an optional private `references/local-profile.md` inside your installed copy. Keep that profile out of public exports. The distributed skill has no personal account bindings or avatar artwork.
+Yes. Supply them in the request or your installed copy's private `references/local-profile.md`. Keep that profile out of public exports. The skill does not invent an avatar's appearance or bundle someone else's identity.
+
 </details>
 
-## Inside the package
+<details><summary><b>Does approving the script start video production?</b></summary>
+
+No. It does not generate voice, record a demo, send test messages, animate the avatar, render or publish as a side effect of script approval. Give a separate instruction for the next step.
+
+</details>
+
+<details><summary><b>Does it work in all 15 agents?</b></summary>
+
+The guide documents installation/import routes; it is not an execution certification. Available history, files, browser captures and private output folders depend on your agent and environment. Explicitly invoke the skill if contextual selection does not choose it.
+
+</details>
+
+<details><summary><b>How do I update or remove it?</b></summary>
+
+Compare a new download with the installed folder and preserve your local profile/customizations. Remove only the installed skill folder to uninstall and refresh discovery. Private story outputs are separate files; remove them deliberately when no longer needed. See [installation and maintenance](docs/installation.md#updating-and-uninstalling).
+
+</details>
+
+<a id="share"></a>
+
+## 🖼️ Share this skill
+
+[English infographic](docs/images/infographic-en.png) · [Arabic infographic](docs/images/infographic-ar.png) · [Facebook promo](docs/images/facebook-post-ar.png) · [Four Arabic social-copy blocks](docs/social-posts.ar.md) · [Bilingual captions](docs/sharing.md)
+
+<p align="center"><a href="docs/images/infographic-en.png"><img src="docs/images/infographic-en.png" alt="English workflow and starting guide" width="48%"></a> <a href="docs/images/infographic-ar.png"><img src="docs/images/infographic-ar.png" alt="Arabic workflow and starting guide" width="48%"></a></p>
+
+<p align="center"><a href="docs/images/facebook-post-ar.png"><img src="docs/images/facebook-post-ar.png" alt="Arabic Work to Video Script announcement" width="65%"></a></p>
+
+These public illustrations explain the skill; they are not historical screenshots of a real build. Draft announcement copy does not mean posting or comment automation has been configured.
+
+## 🛠️ What is inside?
 
 ```text
 skills/work-to-video-script/
-├── SKILL.md
-├── agents/openai.yaml
-└── references/
-    ├── evidence-guide.md
-    └── deliverable-template.md
+  SKILL.md       Work review, narration, real screenshots and demo planning
+  references/    Evidence decisions and a review-pack template
+  agents/        Codex metadata
+docs/            Bilingual guides, fictional example, review cases and share artwork
 ```
 
-No runtime dependency or bundled scanning script. Structural validation, source review and the documented [behavioral review cases](docs/behavioral-review.md) cover the instruction package; cross-agent execution is not claimed.
+This is an instruction-only skill, with no bundled scanner, video renderer, account database or background service. See the [review scenarios](docs/behavioral-review.md) for its behavior boundaries. Structural validation is separate from testing actual model behavior.
 
-## License and sharing
+## 🤝 Support
 
-[MIT](LICENSE). You can use and adapt the skill; host/service charges are separate. [English and Arabic infographics, Facebook artwork and draft announcement copy](docs/sharing.md) are included. These promotional illustrations explain the skill; they are not screenshots proving a real project outcome.
+[Open an issue](https://github.com/eyoussef-builds/work-to-video-script/issues) in English or Arabic with an invented example. Do not attach private project screenshots, customer messages or credentials. For private matters: [hello@eyoussef.me](mailto:hello@eyoussef.me).
 
-Published by [eyoussef-builds](https://github.com/eyoussef-builds).
+**Created by [eyoussef-builds](https://github.com/eyoussef-builds)** · [hello@eyoussef.me](mailto:hello@eyoussef.me) · [eyoussef.me](https://eyoussef.me) · [MIT](LICENSE)

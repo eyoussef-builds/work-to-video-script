@@ -1,0 +1,4 @@
+interface:
+  display_name: "Work to Video Script"
+  short_description: "Turn completed work into a script with real evidence"
+  default_prompt: "Use $work-to-video-script to review the completed work and draft a narrated script with real screenshots and a demo plan; stop before making a video."

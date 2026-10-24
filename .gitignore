@@ -1,0 +1,8 @@
+.DS_Store
+.private/
+__pycache__/
+*.pyc
+skills/*/references/local-profile.md
+output/
+.env
+.env.*
